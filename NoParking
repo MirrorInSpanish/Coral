@@ -1,0 +1,6 @@
+// Write a program that outputs "  No parking"
+// Note the first line has two leading spaces.
+// Inclue a line break and output "1:00 - 5:00 a.m."
+
+Put "  NO PARKING\n" to output
+Put "1:00 - 5:00 a.m." to output
