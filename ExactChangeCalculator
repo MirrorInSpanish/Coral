@@ -2,6 +2,7 @@
 //End each line with a newline. The coin types are dollars, quarters, dimes, nickels, and pennies.
 //Use singular and plural coin names as appropriate, like 1 penny vs. 2 pennies.
 
+//Declare variables changeAmount, quarters, dimes, nickels, pennies, and dollars
 integer changeAmount
 integer quarters
 integer dimes
@@ -9,69 +10,90 @@ integer nickels
 integer pennies
 integer dollars
 
+//Assign user input to variable changeAmount
 changeAmount = Get next input
 
+//Evaluates changeAmount is less than or equal to 0, if true outputs "no change" with a linebreak
 if changeAmount <= 0
    Put "no change\n" to output
 
+//Evaluates changeAmount divided by 100 is greater than or equal to 1, if true assigns dollars with the value of changeAmount divided by 100 and changeAmount with the remainder of changeAmount divided by 100 
 if (changeAmount / 100) >= 1
    dollars = changeAmount / 100
    changeAmount = changeAmount % 100
-   
+
+//Evaluates changeAmount divided by 25 is greater than 0, if true assigns quarters with the value of changeAmount divided by 25 and changeAmount with the remainder of changeAmount divided by 25 
 if changeAmount / 25 > 0
    quarters = changeAmount / 25
    changeAmount = changeAmount % 25
-   
+
+//Evaluates changeAmount divided by 10 is greater than 0, if true assigns dimes with the value of changeAmount divided by 10 and changeAmount with the remainder of changeAmount divided by 10 
 if changeAmount / 10 > 0
    dimes = changeAmount / 10
    changeAmount = changeAmount % 10
-   
+
+//Evaluates changeAmount divided by 5 is greater than 0, if true assigns nickels with the value of changeAmount divided by 5 and changeAmount with the remainder of changeAmount divided by 5 
 if changeAmount / 5 > 0
    nickels = changeAmount / 5
    changeAmount = changeAmount % 5
+//Evaluates changeAmount is greater than 0, if true assigns pennues with the value of changeAmount 
 if changeAmount > 0    
    pennies = changeAmount
 
+//Evaluates dollars is greater than or equal to 1 and dollars is less than 2, if both statements are true outputs dollars, then outputs " dollar", then outputs a linebreak
 if (dollars >= 1) and (dollars < 2) 
    Put dollars to output
    Put " dollar" to output
    Put "\n" to output
+//Evaluates dollars is greater than or equal to 2, if statement is true outputs dollars, then outputs " dollars", then outputs a linebreak
 if dollars >= 2
    Put dollars to output
    Put " dollars" to output
    Put "\n" to output
 
+//Evaluates quarters is greater than or equal to 1 and quarters is less than 2, if both statements are true outputs quarters, then outputs " quarter", then outputs a linebreak
 if (quarters >= 1) and (quarters < 2)   
    Put quarters to output
    Put " quarter" to output
    Put "\n" to output
+
+//Evaluates quarter is greater than or equal to 2, if statement is true outputs quarters, then outputs " quarters", then outputs a linebreak
 if quarters >= 2
    Put quarters to output
    Put " quarters" to output
    Put "\n" to output
 
+//Evaluates dimes is greater than or equal to 1 and dimes is less than 2, if both statements are true outputs dimes, then outputs " dime", then outputs a linebreak
 if (dimes >= 1) and (dimes < 2)   
    Put dimes to output
    Put " dime" to output
    Put "\n" to output
+
+//Evaluates dimes is greater than or equal to 2, if statement is true outputs dimes, then outputs " dimes", then outputs a linebreak
 if dimes >= 2
    Put dimes to output
    Put " dimes" to output
    Put "\n" to output
 
+//Evaluates nickels is greater than or equal to 1 and nickels is less than 2, if both statements are true outputs nickels, then outputs " nickel", then outputs a linebreak
 if (nickels >= 1) and (nickels < 2)   
    Put nickels to output
    Put " nickel" to output
    Put "\n" to output
+
+//Evaluates nickels is greater than or equal to 2, if statement is true outputs nickels, then outputs " nickels", then outputs a linebreak
 if nickels >= 2
    Put nickels to output
    Put " nickels" to output
    Put "\n" to output
 
+//Evaluates pennies is greater than or equal to 1 and pennies is less than 2, if both statements are true outputs pennies, then outputs " penny", then outputs a linebreak
 if (pennies >= 1) and (pennies < 2)  
    Put pennies to output
    Put " penny" to output
    Put "\n" to output
+
+//Evaluates pennies is greater than or equal to 2, if statement is true outputs pennies, then outputs " pennies", then outputs a linebreak
 if pennies >= 2
    Put pennies to output
    Put " pennies" to output
