@@ -1,0 +1,45 @@
+//Primary U.S. interstate highways are numbered 1-99.
+//Odd numbers (like the 5 or 95) go north/south, and evens (like the 10 or 90) go east/west.
+//Auxiliary highways are numbered 100-999, and service the primary highway indicated by the rightmost two digits.
+//Thus, the 405 services the 5, and the 290 services the 90.
+//Given a highway number, indicate whether it is a primary or auxiliary highway.
+//If auxiliary, indicate what primary highway it serves.
+//Also indicate if the (primary) highway runs north/south or east/west.
+
+integer highway
+integer primary
+
+highway = Get next input
+
+Put "The " to output
+
+if highway == 0 
+   Put "0 is not a valid interstate highway number." to output
+
+if ((highway / 100) < 1) and (highway > 0)
+   Put highway to output
+   Put " is primary,  going " to output
+
+if (highway / 100) >= 1
+   Put highway to output
+   Put " is auxiliary, serving the " to output
+
+
+
+if (((highway / 100) < 1) and (highway > 0))  and (highway % 2) == 0 and (highway > 0)
+   Put ", going east/west." to output
+   
+elseif (((highway / 100) < 1) and (highway > 0))  and (highway % 2) != 0 and (highway > 0)
+   Put ", going north/south." to output
+   
+
+
+elseif (highway % 2) == 0 and (highway > 0)
+   primary = (highway % 100)
+   Put primary to output
+   Put ", going east/west." to output
+   
+elseif (highway % 2) != 0 and (highway > 0)
+   primary = (highway % 100)
+   Put primary to output
+   Put ", going north/south." to output
