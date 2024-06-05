@@ -1,0 +1,30 @@
+//Write a program that takes a date as input and outputs the date's season.
+//The input is an integer to represent the month and an integer to represent the day.
+//In addition, check if both integers are valid (an actual month and day).
+
+//The dates for each season are:
+//spring: March 20 - June 20
+//summer: June 21 - September 21
+//autumn: September 22 - December 20
+//winter: December 21 - March 19
+
+integer day
+integer month
+
+month = Get next input
+day   = Get next input
+
+if          (month < 1) or (month > 12) or (day < 1) or (day > 31)
+   Put "invalid" to output
+   
+elseif      ((month == 3) and (day >= 20)) or (((month >= 3) or (month == 6)) and (day <= 20)) 
+   Put "spring" to output
+   
+elseif      ((month == 6) and (day >= 21)) or ((month == 9) and (day <= 21))
+   Put "summer" to output
+   
+elseif      ((month == 9) and (day >= 22)) or ((month == 12) and (day <= 20))
+   Put "autumn" to output
+   
+elseif      ((month == 12) and (day >= 21)) or (month <= 03)
+   Put "winter" to output
