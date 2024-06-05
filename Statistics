@@ -1,0 +1,33 @@
+//Using 3 integers, output the average and product using floating-point arithmetic.
+//Output all floating-point numbers with five digits after the decimal point, which can be achieved as follows:
+//Put x to output with 5 decimal places
+
+integer num1
+integer num2
+integer num3
+integer avgNum
+integer productNum
+float decAvg
+
+num1        = Get next input
+num2        = Get next input
+num3        = Get next input
+
+avgNum      = (num1 + num2 + num3) / 3
+
+Put avgNum to output
+Put " " to output
+
+productNum  = num1 * num2 * num3
+
+Put productNum to output
+Put "\n" to output
+
+decAvg = (num1 + num2 + num3) / 3.0
+
+Put decAvg to output with 5 decimal places
+Put " " to output
+
+productNum  = num1 * num2 * num3
+
+Put productNum to output with 5 decimal places
