@@ -13,43 +13,45 @@ integer primary
 //Get input from user for highway
 highway = Get next input
 
-//Output "The "
-Put "The " to output
-
-//Takes for account invalid input of 0 and puts "0 is not a valid interstate highway number." if 0 was the user input
-if highway == 0 
-   Put "0 is not a valid interstate highway number." to output
-
-//Determines if highway is primary by calculating if highway divided by 100 is less than 1 and greater than 0
-if ((highway / 100) < 1) and (highway > 0)
+//Takes for account invalid input of 0 or greater than 999 and outputs highway, then outputs " is not a valid interstate highway number." when either statement evaluates to true
+if (highway == 0) or (highway > 999) 
    Put highway to output
-   Put " is primary,  going " to output
+   Put " is not a valid interstate highway number." to output
 
-//Determines if highway is auxiliary by calculating if highway divided by 100 is greater than or equal to 1
-if (highway / 100) >= 1
+//Determines if highway is primary by calculating if highway divided by 100 is less than 1 and greater than 0  and less than 1000
+//When all statments evalute to true outputs "The ", then outputs highway, then outputs " is primary, going "
+if ((highway / 100) < 1) and (highway > 0) and (highway < 1000)
+   Put "The " to output
+   Put highway to output
+   Put " is primary, going " to output
+
+//Determines if highway is auxiliary by calculating if highway divided by 100 is greater than or equal to 1 and greater than 0  and less than 1000
+//When all statments evalute to true outputs "The ", then outputs highway, then outputs " is auxiliary, serving the "
+if (highway / 100) >= 1 and (highway > 0) and (highway < 1000)
+   Put "The " to output
    Put highway to output
    Put " is auxiliary, serving the " to output
 
-//Output for primary highway direction of east/west
-//Determines if highway is an even number by taking the initial primary calculation and determing if the remainder of highway divided by 2 is equivalent to 0 and that highway is greater than 0
-if (((highway / 100) < 1) and (highway > 0))  and (highway % 2) == 0 and (highway > 0)
-   Put ", going east/west." to output
+//Determines if highway is an even number by taking the initial primary highway calculation and determining if the remainder of highway divided by 2 is equivalent to 0 and that highway is greater than 0, but less than 100
+//When all statments evaluate to true outputs "east/west."
+if (((highway / 100) < 1) and (highway > 0))  and (highway % 2) == 0 and (highway > 0) and (highway < 1000)
+   Put "east/west." to output
 
-//Output for primary highway direction of north/south
-//Determines if highway is an odd number by taking the initial primary calculation and determing if the remainder of highway divided by 2 is not equivalent to 0 and that highway is greater than 0
-elseif (((highway / 100) < 1) and (highway > 0))  and (highway % 2) != 0 and (highway > 0)
-   Put ", going north/south." to output
+//Determines if highway is an odd number by taking the initial primary calculation and determing if the remainder of highway divided by 2 is not equivalent to 0 and that highway is greater than 0, but less than 100
+//When all statments evaluate to true outputs "north/south."
+elseif (((highway / 100) < 1) and (highway > 0))  and (highway % 2) != 0 and (highway > 0) and (highway < 1000)
+   Put "north/south." to output
 
-//Output for primary serving auxiliary with direction of east/west
-//Determines if highway is an even number by taking the initial auxiliary calculation and determing if the remainder of highway divided by 2 is equivalent to 0 and that highway is greater than 0
-elseif (highway % 2) == 0 and (highway > 0)
+//Determines if highway is an even number by taking the initial auxiliary calculation and determing if the remainder of highway divided by 2 is equivalent to 0 and that highway is greater than 0, but less than 100
+//When all statments evaluate to true outputs ", going east/west."
+elseif (highway % 2) == 0 and (highway > 0) and (highway < 1000)
    primary = (highway % 100)
    Put primary to output
    Put ", going east/west." to output
 
-//Output for primary serving auxiliary with direction of north/south
-//Determines if highway is an even number by taking the initial auxiliary calculation and determing if the remainder of highway divided by 2 is not equivalent to 0 and that highway is greater than 0
-elseif (highway % 2) != 0 and (highway > 0)
+//Determines if highway is an odd number by taking the initial auxiliary calculation and determing if the remainder of highway divided by 2 is not equivalent to 0 and that highway is greater than 0, but less than 100
+//When all statments evaluate to true outputs ", going north/south."
+elseif (highway % 2) != 0 and (highway > 0) and (highway < 1000)
    primary = (highway % 100)
    Put primary to output
    Put ", going north/south." to output
