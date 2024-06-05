@@ -8,17 +8,24 @@
 //Some example leap years are 1600, 1712, and 2016.
 //Write a program that takes in a year and determines whether that year is a leap year.
 
+//Declare variable inputYear
 integer inputYear
+
+//Takes the user input and assigns the value to inputYear
 inputYear = Get next input
 
-// Type your code here
-
+//Checks if the remainder of inputYear divided by 400 is equivalent to 0. If statement evaluate to true outputs inputYear, then outputs " is a leap year." - If false moves on to elseif statement
 if ((inputYear % 400) == 0)
    Put inputYear to output
    Put " is a leap year." to output
+
+//Checks if the remainder of inputYear divided by 4 is equivalent to 0 and if the remainder of inputYear divided by 100 is not equivalent to 0.
+//If statement evaluate to true outputs inputYear, then outputs " is a leap year." - If false moves on to else statement
 elseif ((inputYear % 4) == 0) and (inputYear % 100 != 0) 
    Put inputYear to output
    Put " is a leap year." to output  
+
+//If all statements evalue to false outputs input year, then outputs " is not a leap year."
 else   
    Put inputYear to output
    Put " is not a leap year." to output
