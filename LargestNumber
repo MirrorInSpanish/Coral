@@ -1,20 +1,31 @@
 //Write a program that reads three integers as inputs, and outputs the largest of the three values.
 
+//Declare variables a, b, and c
 integer a
 integer b
 integer c
 
+//Takes the first user input and assigns the value to a, assigns second value for user input to b, assigns thrird value for user input to c
 a = Get next input
 b = Get next input
 c = Get next input
 
+//Checks if the evaluation of both a is greater than b and a is greater than c. If both statements evaluate to true, outputs a - If false moves on to the next if statement.
 if (a > b) and (a > c)
    Put a to output
+
+//Checks if the evaluation of both b is greater than a and b is greater than c. If both statements evaluate to true, outputs b - If false moves on to the next if statement.
 if (b > a) and (b > c)
    Put b to output
+
+//Checks if the evaluation of both c is greater than c and c is greater than b. If both statements evaluate to true, outputs c - If false moves on to the next elseif statement.
 if (c > a) and (c > b)
    Put c to output
+
+//Checks if the evaluation of a is equivalent to b. If statement evaluate to true, outputs a - If false moves on to the next elseif statement.
 elseif (a == b) 
    Put a to output
+
+//Checks if the evaluation of b is equivalent to c. If statement evaluate to true, outputs b - If false moves on to the next elseif statement.
 elseif (b == c)
    Put b to output  
