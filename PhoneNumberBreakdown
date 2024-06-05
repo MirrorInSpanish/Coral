@@ -1,14 +1,24 @@
 //Given a 7-digit integer representing a 7-digit phone number, excluding the area code, output the prefix and line number, separated by a hyphen.
 
+//Declare variables phoneNum, prefix, and lineNum
 integer phoneNum
 integer prefix
 integer lineNum
 
+//Assigns user input to variable phoneNum
 phoneNum = Get next input
 
+//Evaluates phoneNum divided by 10000 and assigns the value to prefix
 prefix   = phoneNum / 10000
+
+//Evaluates the remainder of phoneNum divided by 10000 and assigns the value to lineNum
 lineNum  = phoneNum % 10000
 
+//Outputs prefix
 Put prefix to output
+
+//Outputs "-"
 Put "-" to output
+
+//Outputs lineNum
 Put lineNum to output
