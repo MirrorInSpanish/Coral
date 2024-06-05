@@ -1,2 +1,2 @@
 # Coral
-A collection of my Coral journey.
+A collection of my Coral language journey.
