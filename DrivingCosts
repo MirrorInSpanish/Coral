@@ -2,21 +2,46 @@
 //Output the gas cost (gasCost) with two digits after the decimal point, which can be achieved as follows:
 //Put gasCost to output with 2 decimal places
 
+//Declare float variables mileGallon, dollarGallon, and gasCost
+//Declares integer variable miles
 float 	mileGallon
 float 	dollarGallon
 float 	gasCost
 integer miles
 
+//Takes the first user input and assigns the value to mileGallon, assigns second value for user input to dollarGallon
 mileGallon 	= Get next input
 dollarGallon 	= Get next input
+
+//Assigns the value 10 to miles
 miles		= 10
+
+//Evaluates miles divided by mileGallon, then multiplies the result by dollarGallon and assigns value to gasCost
 gasCost 	=  miles/mileGallon * dollarGallon
+
+//Outputs gasCost with 2 decimal places, example 0.10
 Put gasCost to output with 2 decimal places
+
+//Outputs " "
 Put " " to output
+
+//Assigns the value 50 to miles
 miles		= 50
+
+//Evaluates miles divided by mileGallon, then multiplies the result by dollarGallon and assigns value to gasCost
 gasCost 	=  miles/mileGallon * dollarGallon
+
+//Outputs gasCost with 2 decimal places, example 3.25
 Put gasCost to output with 2 decimal places
+
+//Outputs " "
 Put " " to output
+
+//Assigns the value 400 to miles
 miles		= 400
+
+//Evaluates miles divided by mileGallon, then multiplies the result by dollarGallon and assigns value to gasCost
 gasCost 	=  miles/mileGallon * dollarGallon
+
+//Outputs gasCost with 2 decimal places, example 5.50
 Put gasCost to output with 2 decimal places
