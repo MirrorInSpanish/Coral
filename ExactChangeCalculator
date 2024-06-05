@@ -1,0 +1,78 @@
+//Write a program with total change amount as an integer input, and output the change using the fewest coins, one coin type per line.
+//End each line with a newline. The coin types are dollars, quarters, dimes, nickels, and pennies.
+//Use singular and plural coin names as appropriate, like 1 penny vs. 2 pennies.
+
+integer changeAmount
+integer quarters
+integer dimes
+integer nickels
+integer pennies
+integer dollars
+
+changeAmount = Get next input
+
+if changeAmount <= 0
+   Put "no change\n" to output
+
+if (changeAmount / 100) >= 1
+   dollars = changeAmount / 100
+   changeAmount = changeAmount % 100
+   
+if changeAmount / 25 > 0
+   quarters = changeAmount / 25
+   changeAmount = changeAmount % 25
+   
+if changeAmount / 10 > 0
+   dimes = changeAmount / 10
+   changeAmount = changeAmount % 10
+   
+if changeAmount / 5 > 0
+   nickels = changeAmount / 5
+   changeAmount = changeAmount % 5
+if changeAmount > 0    
+   pennies = changeAmount
+
+if (dollars >= 1) and (dollars < 2) 
+   Put dollars to output
+   Put " dollar" to output
+   Put "\n" to output
+if dollars >= 2
+   Put dollars to output
+   Put " dollars" to output
+   Put "\n" to output
+
+if (quarters >= 1) and (quarters < 2)   
+   Put quarters to output
+   Put " quarter" to output
+   Put "\n" to output
+if quarters >= 2
+   Put quarters to output
+   Put " quarters" to output
+   Put "\n" to output
+
+if (dimes >= 1) and (dimes < 2)   
+   Put dimes to output
+   Put " dime" to output
+   Put "\n" to output
+if dimes >= 2
+   Put dimes to output
+   Put " dimes" to output
+   Put "\n" to output
+
+if (nickels >= 1) and (nickels < 2)   
+   Put nickels to output
+   Put " nickel" to output
+   Put "\n" to output
+if nickels >= 2
+   Put nickels to output
+   Put " nickels" to output
+   Put "\n" to output
+
+if (pennies >= 1) and (pennies < 2)  
+   Put pennies to output
+   Put " penny" to output
+   Put "\n" to output
+if pennies >= 2
+   Put pennies to output
+   Put " pennies" to output
+   Put "\n" to output
