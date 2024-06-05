@@ -22,23 +22,23 @@ solution2 = RaiseToPower(x,RaiseToPower(y,z))
 solution3 = AbsoluteValue(x)
 solution4 = SquareRoot(RaiseToPower((x*y),z))
 
-//Outputs solution1 to output with 5 decimal places, example 0.12345 or 10.13285
+//Outputs solution1 with 5 decimal places, example 0.12345 or 10.13285
 Put solution1 to output with 5 decimal places
 
 //Outputs " "
 Put " " to output
 
-//Outputs solution2 to output with 5 decimal places, example 0.12345 or 10.13285
+//Outputs solution2 with 5 decimal places, example 0.12345 or 10.13285
 Put solution2 to output with 5 decimal places
 
 //Outputs " "
 Put " " to output
 
-//Outputs solution3 to output with 5 decimal places, example 0.12345 or 10.13285
+//Outputs solution3 with 5 decimal places, example 0.12345 or 10.13285
 Put solution3 to output with 5 decimal places
 
 //Outputs " "
 Put " " to output
 
-//Outputs solution4 to output with 5 decimal places, example 0.12345 or 10.13285
+//Outputs solution4 with 5 decimal places, example 0.12345 or 10.13285
 Put solution4 to output with 5 decimal places
