@@ -1,19 +1,42 @@
 //Write a program using integers userNum and x as input, and output userNum divided by x four times.
 
+//Declare variables userNum and x
 integer userNum
 integer x
 
+//Takes the first user input and assigns the value to userNum, assigns second value for user input to x
 userNum = Get next input
 x 	= Get next input
 
+//Evaluates userNum divided by x and assigns value to userNum
 userNum = userNum / x
+
+//Outputs userNum
 Put userNum to output
+
+//Outputs " "
 Put " " to output
+
+//Second evaluation for userNum divided by x and assigns value to userNum
 userNum = userNum / x
+
+//Outputs userNum
 Put userNum to output
+
+//Outputs " "
 Put " " to output
+
+//Third evaluation for userNum divided by x and assigns value to userNum
 userNum = userNum / x
+
+//Outputs userNum
 Put userNum to output
+
+//Outputs " "
 Put " " to output
+
+//Forth evaluation for userNum divided by x and assigns value to userNum
 userNum = userNum / x
+
+//Outputs userNum
 Put userNum to output
