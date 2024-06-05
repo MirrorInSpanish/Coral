@@ -1,0 +1,14 @@
+//Given a 7-digit integer representing a 7-digit phone number, excluding the area code, output the prefix and line number, separated by a hyphen.
+
+integer phoneNum
+integer prefix
+integer lineNum
+
+phoneNum = Get next input
+
+prefix   = phoneNum / 10000
+lineNum  = phoneNum % 10000
+
+Put prefix to output
+Put "-" to output
+Put lineNum to output
