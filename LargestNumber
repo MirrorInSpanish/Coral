@@ -1,0 +1,20 @@
+//Write a program that reads three integers as inputs, and outputs the largest of the three values.
+
+integer a
+integer b
+integer c
+
+a = Get next input
+b = Get next input
+c = Get next input
+
+if (a > b) and (a > c)
+   Put a to output
+if (b > a) and (b > c)
+   Put b to output
+if (c > a) and (c > b)
+   Put c to output
+elseif (a == b) 
+   Put a to output
+elseif (b == c)
+   Put b to output  
