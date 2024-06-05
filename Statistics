@@ -1,7 +1,11 @@
-//Using 3 integers, output the average and product using floating-point arithmetic.
+//Using 3 integers, output the average and product using integer arithmetic.
+//Then
+//Using the same 3 integers, output the average and product using floating-point arithmetic.
 //Output all floating-point numbers with five digits after the decimal point, which can be achieved as follows:
 //Put x to output with 5 decimal places
 
+//Declare variables num1, num2, num3, avgNum, and productNum
+//Declare float decAvg
 integer num1
 integer num2
 integer num3
@@ -9,25 +13,40 @@ integer avgNum
 integer productNum
 float decAvg
 
+//Assigns first user input to variable num1, assigns second user input to num2, assigns third user input to num3
 num1        = Get next input
 num2        = Get next input
 num3        = Get next input
 
+//Evaluates num1 + num2 + num3, then divides the result by 3 and assigns avgNum with the value
 avgNum      = (num1 + num2 + num3) / 3
 
+//Outputs avgNum
 Put avgNum to output
+
+//Outputs " "
 Put " " to output
 
+//Evaluates num1 multiplied by num2 multiplied by num3, then assigns productNum with the value
 productNum  = num1 * num2 * num3
 
+//Outputs productNum
 Put productNum to output
+
+//Outputs a linebreak
 Put "\n" to output
 
+//Evaluates num1 + num2 + num3, then divides the result by 3 and assigns decAvg with the value
 decAvg = (num1 + num2 + num3) / 3.0
 
+//Outputs decAvg with a 5 decimal places, example 0.12345 or 9.68164
 Put decAvg to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
 
+//Evaluates num1 multiplied by num2 multiplied by num3, then assigns productNum with the value
 productNum  = num1 * num2 * num3
 
+//Outputs productNum with a 5 decimal places, example 0.12345 or 9.68164
 Put productNum to output with 5 decimal places
