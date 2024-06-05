@@ -18,7 +18,7 @@ if (a > b) and (a > c)
 if (b > a) and (b > c)
    Put b to output
 
-//Checks if the evaluation of both c is greater than c and c is greater than b. If both statements evaluate to true, outputs c - If false moves on to the next elseif statement.
+//Checks if the evaluation of both c is greater than c and c is greater than b. If both statements evaluate to true, outputs c
 if (c > a) and (c > b)
    Put c to output
 
@@ -26,6 +26,6 @@ if (c > a) and (c > b)
 elseif (a == b) 
    Put a to output
 
-//Checks if the evaluation of b is equivalent to c. If statement evaluate to true, outputs b - If false moves on to the next elseif statement.
+//Checks if the evaluation of b is equivalent to c. If statement evaluate to true, outputs b
 elseif (b == c)
    Put b to output  
