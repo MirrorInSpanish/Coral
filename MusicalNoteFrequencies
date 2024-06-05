@@ -3,27 +3,52 @@
 //Output all frequencies with five digits after the decimal point, which can be achieved as follows:
 //Put frequency to output with 5 decimal places
 
+//Declare float variables frequency, r, and nextFrequency
 float frequency
 float r
 float nextFrequency
 
+//Takes the user input and assigns the value to frequency
 frequency = Get next input
+
+//Evaluates 1.0 divided by 12.0, then raises 2 to the power of the evaluated value, then assigns r with the final evaluation
 r = RaiseToPower(2,(1.0 / 12.0))
 
+//Outputs frequency with 5 decimal places, example 0.12345 or 10.13285
 Put frequency to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
 
+//Evaluates r raised to the power of 1, then multiplies the evaluation by frequency, then assigns nextFrequency with the final evaluation
 nextFrequency = frequency * RaiseToPower(r,1)
+
+//Outputs nextFrequency with 5 decimal places, example 0.12345 or 10.13285
 Put nextFrequency to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
 
+//Evaluates r raised to the power of 2, then multiplies the evaluation by frequency, then assigns nextFrequency with the final evaluation
 nextFrequency = frequency * RaiseToPower(r,2)
+
+//Outputs frequency with 5 decimal places, example 0.12345 or 10.13285
 Put nextFrequency to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
 
+//Evaluates r raised to the power of 3, then multiplies the evaluation by frequency, then assigns nextFrequency with the final evaluation
 nextFrequency = frequency * RaiseToPower(r,3)
+
+//Outputs frequency with 5 decimal places, example 0.12345 or 10.13285
 Put nextFrequency to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
 
+//Evaluates r raised to the power of 4, then multiplies the evaluation by frequency, then assigns nextFrequency with the final evaluation
 nextFrequency = frequency * RaiseToPower(r,4)
+
+//Outputs frequency with 5 decimal places, example 0.12345 or 10.13285
 Put nextFrequency to output with 5 decimal places
