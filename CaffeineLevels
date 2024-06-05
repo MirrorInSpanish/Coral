@@ -2,20 +2,44 @@
 //Caffeine has a half-life of about 6 hours in humans.
 //Given the caffeine amount (in mg) as input, output the caffeine level after 6, 12, and 18 hours.
 
+//Declare variable caffeineAmt
 float caffeineAmt
 
+//Takes user input for caffeineAmt and assigns user input value to caffeineAmt
 caffeineAmt = Get next input
 
-// Your solution goes here
+//Calculates half-life for caffeineAmt by dividing caffeineAmt by 2 and assigns the result to caffeineAmt
 caffeineAmt = caffeineAmt / 2
+
+// Outputs "After 6 hours: "
 Put "After 6 hours: " to output
+
+// Outputs caffeineAmt
 Put caffeineAmt to output
+
+// Outputs " mg\n"
 Put " mg\n" to output
+
+//Further calculates the new half-life for caffeineAmt by dividing caffeineAmt by 2 and assigns the result to caffeineAmt
 caffeineAmt = caffeineAmt / 2
+
+// Outputs "After 12 hours: "
 Put "After 12 hours: " to output
+
+// Outputs caffeineAmt
 Put caffeineAmt to output
+
+// Outputs " mg\n"
 Put " mg\n" to output
+
+//Further calculates the new half-life for caffeineAmt by dividing caffeineAmt by 2 and assigns the result to caffeineAmt
 caffeineAmt = caffeineAmt / 2
+
+// Outputs "After 18 hours: "
 Put "After 18 hours: " to output
+
+// Outputs caffeineAmt
 Put caffeineAmt to output
+
+// Outputs " mg\n"
 Put " mg" to output
