@@ -4,37 +4,64 @@
 //(130, 50, 130) is a faded purple, due to the (50, 50, 50) gray part. (In other words, equal amounts of red, green, blue yield gray).
 //Given values red, green, and blue, remove the gray part.
 
+//Declare variables red, green, blue, and gray
 integer red
 integer green
 integer blue
 integer gray
 
+//Assigns first user input to variable red, assigns second user input to green, assigns third user input to blue
 red 	= Get next input
 green = Get next input
 blue 	= Get next input
 
+//Evaluates red is less than or equal to green and red is less than or equal to blue, if both statements are true then variable gray is assigned with the value of red subtracted by red - if false move to next statement
 if       (red <= green) and (red <= blue)
    gray = red - red
+
+//Evaluates green is less than or equal to red and green is less than or equal to blue, if both statements are true then variable gray is assigned with the value of red subtracted by green - if false move to next statement
 elseif   (green <= red) and (green <= blue)
    gray = red - green
+
+//Evaluates blue is less than or equal to red and blue is less than or equal to green, if both statements are true then variable gray is assigned with the value of red subtracted by blue
 elseif     (blue <= red) and (blue <= green)
    gray = red - blue
+
+//Ouputs gray
 Put gray to output
+
+//Outputs " "
 Put " " to output
 
+//Evaluates red is less than or equal to green and red is less than or equal to blue, if both statements are true then variable gray is assigned with the value of green subtracted by red - if false move to next statement
 if       (red <= green) and (red <= blue)
    gray = green - red
+
+//Evaluates green is less than or equal to red and green is less than or equal to blue, if both statements are true then variable gray is assigned with the value of green subtracted by green - if false move to next statement
 elseif   (green <= red) and (green <= blue)
    gray = green - green
+
+//Evaluates blue is less than or equal to red and blue is less than or equal to green, if both statements are true then variable gray is assigned with the value of green subtracted by blue 
 elseif     (blue <= red) and (blue <= green)
    gray = green - blue
+
+//Ouputs gray
 Put gray to output
+
+//Outputs " "
 Put " " to output
 
+//Evaluates red is less than or equal to green and red is less than or equal to blue, if both statements are true then variable gray is assigned with the value of blue subtracted by red - if false move to next statement
 if       (red <= green) and (red <= blue)
    gray = blue - red
+
+//Evaluates green is less than or equal to red and green is less than or equal to blue, if both statements are true then variable gray is assigned with the value of blue subtracted by green - if false move to next statement
 elseif   (green <= red) and (green <= blue)
    gray = blue - green
+
+//Evaluates blue is less than or equal to red and blue is less than or equal to green, if both statements are true then variable gray is assigned with the value of blue subtracted by blue
 elseif     (blue <= red) and (blue <= green)
    gray = blue - blue
+
+//Ouputs gray
 Put gray to output
