@@ -1,0 +1,22 @@
+//Driving is expensive. Write a program with a car's miles/gallon and gas dollars/gallon (both floats) as input, and output the gas cost for 10 miles, 50 miles, and 400 miles.
+//Output the gas cost (gasCost) with two digits after the decimal point, which can be achieved as follows:
+//Put gasCost to output with 2 decimal places
+
+float 	mileGallon
+float 	dollarGallon
+float 	gasCost
+integer miles
+
+mileGallon 	= Get next input
+dollarGallon 	= Get next input
+miles		= 10
+gasCost 	=  miles/mileGallon * dollarGallon
+Put gasCost to output with 2 decimal places
+Put " " to output
+miles		= 50
+gasCost 	=  miles/mileGallon * dollarGallon
+Put gasCost to output with 2 decimal places
+Put " " to output
+miles		= 400
+gasCost 	=  miles/mileGallon * dollarGallon
+Put gasCost to output with 2 decimal places
