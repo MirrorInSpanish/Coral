@@ -4,25 +4,47 @@
 //Output the estimated monthly mortgage (estMortgage) with two digits after the decimal point, which can be achieved as follows:
 //Put estMortgage to output with 2 decimal places
 
+//Declare integer variables currPrice, lastMonthPrice, and priceChange
+//Declare float variable estMortgage
 integer currPrice
 integer lastMonthPrice
 float estMortgage
 integer priceChange
 
+//Assigns the first user input to currPrice, assigns the second user input to lastMonthPrice
 currPrice = Get next input
 lastMonthPrice = Get next input
 
 
-// Your solution goes here
+//Evaluates currPrice subtracted by lastMonthPrice and assigns the value to priceChange
 priceChange = currPrice - lastMonthPrice
+
+//Evaluates currPrice multiplied by 0.045, then divides that evaluation by 12 and assigns the value to estMortgage
 estMortgage = (currPrice * 0.045) / 12
 
+//Outputs "This house is $"
 Put "This house is $" to output
+
+//Outputs currPrice
 Put currPrice to output
+
+//Outputs ". "
 Put ". " to output
+
+//Outputs "The change is $"
 Put "The change is $" to output
+
+//Outputs priceChange
 Put priceChange to output
+
+//Outputs " since last month." with a line break
 Put " since last month.\n" to output
+
+//Outputs "The estimated monthly mortgage is $"
 Put "The estimated monthly mortgage is $" to output
+
+//Outputs estMortgage
 Put estMortgage to output with 2 decimal places
+
+//Outputs "."
 Put "." to output
