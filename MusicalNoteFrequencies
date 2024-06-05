@@ -1,0 +1,29 @@
+//On a piano, a key has a frequency, say f0. Each higher key (black or white) has a frequency of f0 * rn, where n is the distance (number of keys) from that key, and r is 2(1.0/12.0).
+//Given an initial key frequency, output that frequency and the next 4 higher key frequencies.
+//Output all frequencies with five digits after the decimal point, which can be achieved as follows:
+//Put frequency to output with 5 decimal places
+
+float frequency
+float r
+float nextFrequency
+
+frequency = Get next input
+r = RaiseToPower(2,(1.0 / 12.0))
+
+Put frequency to output with 5 decimal places
+Put " " to output
+
+nextFrequency = frequency * RaiseToPower(r,1)
+Put nextFrequency to output with 5 decimal places
+Put " " to output
+
+nextFrequency = frequency * RaiseToPower(r,2)
+Put nextFrequency to output with 5 decimal places
+Put " " to output
+
+nextFrequency = frequency * RaiseToPower(r,3)
+Put nextFrequency to output with 5 decimal places
+Put " " to output
+
+nextFrequency = frequency * RaiseToPower(r,4)
+Put nextFrequency to output with 5 decimal places
