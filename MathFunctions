@@ -1,0 +1,28 @@
+//Given three floating-point numbers x, y, and z, output xy, x(yz), the absolute value of x, and the square root of ((x * y)z).
+//Output all results with five digits after the decimal point, which can be achieved as follows:
+//Put result to output with 5 decimal places
+
+float x
+float y
+float z
+float solution1
+float solution2
+float solution3
+float solution4
+
+x = Get next input
+y = Get next input
+z = Get next input
+
+solution1 = RaiseToPower(x,y)
+solution2 = RaiseToPower(x,RaiseToPower(y,z))
+solution3 = AbsoluteValue(x)
+solution4 = SquareRoot(RaiseToPower((x*y),z))
+
+Put solution1 to output with 5 decimal places
+Put " " to output
+Put solution2 to output with 5 decimal places
+Put " " to output
+Put solution3 to output with 5 decimal places
+Put " " to output
+Put solution4 to output with 5 decimal places
