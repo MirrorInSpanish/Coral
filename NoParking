@@ -2,5 +2,8 @@
 // Note the first line has two leading spaces.
 // Inclue a line break and output "1:00 - 5:00 a.m."
 
+//Outputs "  NO PARKING\n"
 Put "  NO PARKING\n" to output
+
+//Outputs "1:00 - 5:00 a.m."
 Put "1:00 - 5:00 a.m." to output
