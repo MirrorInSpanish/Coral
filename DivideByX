@@ -1,0 +1,19 @@
+//Write a program using integers userNum and x as input, and output userNum divided by x four times.
+
+integer userNum
+integer x
+
+userNum = Get next input
+x 	= Get next input
+
+userNum = userNum / x
+Put userNum to output
+Put " " to output
+userNum = userNum / x
+Put userNum to output
+Put " " to output
+userNum = userNum / x
+Put userNum to output
+Put " " to output
+userNum = userNum / x
+Put userNum to output
