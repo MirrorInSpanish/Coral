@@ -2,6 +2,7 @@
 //Output all results with five digits after the decimal point, which can be achieved as follows:
 //Put result to output with 5 decimal places
 
+//Declare float variables x, y, z, solution1, solution2, solution3, and solution4
 float x
 float y
 float z
@@ -10,19 +11,34 @@ float solution2
 float solution3
 float solution4
 
+//Takes the first user input and assigns the value to x, assigns second value for user input to y, assigns thrird value for user input to z
 x = Get next input
 y = Get next input
 z = Get next input
 
+//Evaluates each built-in Coral math function on the right with the values for x and y, then assigns the value to the corresponding varaible on the left
 solution1 = RaiseToPower(x,y)
 solution2 = RaiseToPower(x,RaiseToPower(y,z))
 solution3 = AbsoluteValue(x)
 solution4 = SquareRoot(RaiseToPower((x*y),z))
 
+//Outputs solution1 to output with 5 decimal places, example 0.12345 or 10.13285
 Put solution1 to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
+
+//Outputs solution2 to output with 5 decimal places, example 0.12345 or 10.13285
 Put solution2 to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
+
+//Outputs solution3 to output with 5 decimal places, example 0.12345 or 10.13285
 Put solution3 to output with 5 decimal places
+
+//Outputs " "
 Put " " to output
+
+//Outputs solution4 to output with 5 decimal places, example 0.12345 or 10.13285
 Put solution4 to output with 5 decimal places
