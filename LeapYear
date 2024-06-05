@@ -25,7 +25,7 @@ elseif ((inputYear % 4) == 0) and (inputYear % 100 != 0)
    Put inputYear to output
    Put " is a leap year." to output  
 
-//If all statements evalue to false outputs input year, then outputs " is not a leap year."
+//If all statements evaluate to false outputs input year, then outputs " is not a leap year."
 else   
    Put inputYear to output
    Put " is not a leap year." to output
