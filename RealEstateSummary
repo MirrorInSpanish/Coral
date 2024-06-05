@@ -1,0 +1,28 @@
+//Sites like Zillow get input about house prices from a database and provide nice summaries.
+//Write a program with two inputs, current price and last months price (both integers).
+//Then, output a summary listing the price, the change since last month, and the estimated monthly mortgage computed as (currentPrice * 0.045) / 12.
+//Output the estimated monthly mortgage (estMortgage) with two digits after the decimal point, which can be achieved as follows:
+//Put estMortgage to output with 2 decimal places
+
+integer currPrice
+integer lastMonthPrice
+float estMortgage
+integer priceChange
+
+currPrice = Get next input
+lastMonthPrice = Get next input
+
+
+// Your solution goes here
+priceChange = currPrice - lastMonthPrice
+estMortgage = (currPrice * 0.045) / 12
+
+Put "This house is $" to output
+Put currPrice to output
+Put ". " to output
+Put "The change is $" to output
+Put priceChange to output
+Put " since last month.\n" to output
+Put "The estimated monthly mortgage is $" to output
+Put estMortgage to output with 2 decimal places
+Put "." to output
